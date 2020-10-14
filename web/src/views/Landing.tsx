@@ -1,6 +1,7 @@
 import React from "react";
 import {FiArrowRight} from "react-icons/fi";
 import logoImg from "../assets/img/Logo.png";
+import '../styles/landing.css';
 
 const Landing = () =>{
     return(
