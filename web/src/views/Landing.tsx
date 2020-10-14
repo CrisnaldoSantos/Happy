@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import {FiArrowRight} from "react-icons/fi";
 import logoImg from "../assets/img/Logo.png";
 import '../styles/landing.css';
@@ -16,9 +17,9 @@ const Landing = () =>{
                     <strong>Estância</strong>
                     <span>Sergipe</span>
                 </div>
-                <a href="" className="enter-app">
+                <Link to="/orphanages-map" className="enter-app">
                     <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)"/>
-                </a>
+                </Link>
             </div>
         </div>
     );
