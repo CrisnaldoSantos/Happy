@@ -1,12 +1,16 @@
 import React from "react";
-import {BrowserRouter,Route} from "react-router-dom";
+import {BrowserRouter,Route, Switch} from "react-router-dom";
 
 import Landing from './views/Landing';
+import OrphanagesMap from './views/OrphanagesMap';
 
 function Routes(){
     return(
         <BrowserRouter>
-            <Route path="/" component={Landing} />
+            <Switch>
+                <Route exact path="/" component={Landing} />
+                <Route path="/orphanages-map" component={OrphanagesMap} />
+            </Switch>
         </BrowserRouter>
     );
 }
